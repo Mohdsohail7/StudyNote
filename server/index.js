@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
     cors({
-        origin:"https://study-note-xi.vercel.app/",
+        origin: process.env.FRONTEND_LINK,
         credentials:true,
     })
 )
